@@ -1,0 +1,47 @@
+.shop{
+  width: 100%;
+  display: flex;
+  margin-top: 2cm;
+  .left-shop{
+    width: 20%;
+    float: left;
+    border-right: 1px solid;
+    background: var(--bg-color);
+    .filter{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-left: 20px;
+      padding-top: 20px;
+      margin-top: 1.3cm;
+      h1{
+        color: var(--text-color);
+      }
+      .filter-items{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        h3{
+          color: var(--secondary-color);
+        }
+        .list{
+          .list-item{
+            display: flex;
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-shop{
+    width: 80%;
+    float: right;
+    .products{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1cm;
+      padding-bottom: 1cm;
+    }
+  }
+}

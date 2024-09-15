@@ -1,0 +1,116 @@
+.all{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4cm;
+  .normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5cm;
+    background: var(--bg-color);
+    border-radius: 40px;
+    width: 1000px;
+    height: 500px;
+  }
+  .normal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 80vh;
+    .left{
+      img{
+        width: 400px;
+        border-radius: 40px;
+      }
+    }
+    .right{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%;
+      .text{
+        display: flex;
+        flex-direction: column;
+        h3{
+          font-weight: 700;
+        }
+        p{
+          font-weight: 350;
+        }
+        .cta{
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          margin-top: 2cm !important;
+          button{
+            width: 200px;
+            background-color: var(--cta);
+            padding-block: 10px;
+            padding-inline: 25px;
+            border-radius: 30px;
+            transition: 1s;
+            box-shadow: 2px 3px 7px;
+            &:hover{
+              background-color: var(--cta-hover);
+            }
+            &:active{
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+@media (max-width:700px) {
+  img{
+    width: 160px !important;
+  }
+  .all{
+    display: flex !important; 
+    margin-top: 1.7cm;
+    padding: 10px;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .normal{
+    width: 400px !important;
+    height: 200px !important;
+    overflow: hidden;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120%;
+    height: 200px;
+    margin-left: -25px !important;
+    padding: 10px;
+    h3{
+      font-size: 15px;
+    }
+    p{
+      font-size: 9px;
+    }
+    .cta{
+      button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -2cm !important;
+        width: 100px !important;
+        height: 30px !important;
+        font-size: 10px;
+      }
+    }
+  }
+}

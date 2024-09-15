@@ -1,0 +1,22 @@
+.all-div{
+  padding-bottom: 2cm;
+  .plant-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.6cm;
+    padding-left: 30px;
+    gap: 10px;
+    border-bottom: 1px solid;
+    h5{
+      font-weight: 700;
+      color: var(--secondary-color);
+    }
+    h6{
+      color: var(--primary-color);
+    }
+    span{
+      font-weight: 500;
+      color: var(--text-color);
+    }
+  }
+}

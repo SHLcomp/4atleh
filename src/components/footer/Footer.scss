@@ -1,0 +1,40 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  padding-block: 20px;
+  h1{
+    color: var(--primary-color);
+    font-weight: 700;
+    span{
+      color: var(--secondary-color);
+    }
+  }
+  .footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2cm;
+    color: var(--accent-color);
+    ul{
+      display: flex;
+      flex-direction: column;
+      li{
+        cursor: pointer;
+        list-style: none;
+      }
+    }
+  }
+
+  .social-media{
+    display: flex;
+    gap: 20px;
+    i{
+      cursor: pointer;
+      color: var(--secondary-color);
+    }
+  }
+}

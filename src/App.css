@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--bg-primary);
+  overflow-x: hidden;
+}
+
+/* root */
+:root{
+  --bg-color: linear-gradient(180deg, #abe6c3, #73A788 50%);
+  --bg-primary: url(../src/assets/images/bg.jpg); /*issues here :)*/
+  --nav-bg-color: white; 
+  --primary-color: #73A788;
+  --least-color: #E9CECE;
+  --secondary-color: #FF9519;
+  --accent-color: #abe6c3; 
+  --text-color: #000000;
+  --title-txt-color: #73A788;
+  --cta: #F4C626;
+  --cta-hover: #ecd16c;
+  --color: #26D6B6;
+}
+
+/* shared */
+.a{
+  text-decoration: none;
+  color: var(--text-color);
+}
