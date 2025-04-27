@@ -7,13 +7,10 @@ import all_data from '../../assets/data/all_products';
 
 const ProductFilter = () => {
   const {productId} = useParams();
-  const product = all_data.find((e)=> e.id === Number(productId))
+  const product = all_data.find((e)=> e.id === Number(productId));
 
   return (
-    <div>
-      
-
-
+    <div>  
       <ProductDisplay product={product}/>
     </div>
   )

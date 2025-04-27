@@ -10,10 +10,11 @@ body{
   overflow-x: hidden;
 }
 
+
 /* root */
 :root{
   --bg-color: linear-gradient(180deg, #abe6c3, #73A788 50%);
-  --bg-primary: url(../src/assets/images/bg.jpg); /*issues here :)*/
+  --bg-primary: url(../src/assets/images/bg.jpg); /* issues here :) */
   --nav-bg-color: white; 
   --primary-color: #73A788;
   --least-color: #E9CECE;

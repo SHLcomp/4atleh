@@ -4,10 +4,10 @@
   gap: 10px;
   .products{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
     .product{
       display: flex;
       flex-direction: column;

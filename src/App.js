@@ -8,12 +8,14 @@ import Fav from './pages/fav/Fav.jsx';
 import Signlogin from './pages/signlogin/Signlogin.jsx';
 import ShopAll from './pages/shopAll/ShopAll.jsx';
 import AllCat from './components/AllCat/AllCat.jsx';
+import AllCat2 from './components/AllCat/AllCat2.jsx';
 import ProductFilter from './components/productFilter/ProductFilter.jsx';
+import ShopContextProvider from './context/ShopContext.jsx'; //needed to wrap this here, also in ShopAll, to wrap <Product />
 
 function App() {
   return (
     <div className="App">
-      
+      <ShopContextProvider>
       <BrowserRouter>
       <Navbar />
 
@@ -32,6 +34,19 @@ function App() {
       <Route path='/Aquatic' element={<AllCat category="Aquatic"/>}></Route>
       <Route path='/Roses' element={<AllCat category="Roses"/>}></Route>
 
+      <Route path='/Toner' element={<AllCat category="Toner"/>}></Route>
+      <Route path='/Tint' element={<AllCat category="Tint"/>}></Route>
+      <Route path='/HairPer' element={<AllCat category="HairPer"/>}></Route>
+      <Route path='/HairOil' element={<AllCat category="HairOil"/>}></Route>
+
+      <Route path='/SkinProducts' element={<AllCat2 sub_category="SkinProducts"/>}></Route>
+      <Route path='/Indoor' element={<AllCat2 sub_category="Indoor"/>}></Route>
+      <Route path='/Outdoor' element={<AllCat2 sub_category="Outdoor"/>}></Route>
+      <Route path='/HairProducts' element={<AllCat2 sub_category="HairProducts"/>}></Route>
+      <Route path='/Sales' element={<AllCat2 sub_category="Sales"/>}></Route>
+
+      
+
       {/* products filter */}
       {/* products route and id path */}
       <Route path='/product' element={<ProductFilter/>}>
@@ -45,6 +60,7 @@ function App() {
       
       <Footer />
       </BrowserRouter>
+      </ShopContextProvider>
     </div>
   );
 };

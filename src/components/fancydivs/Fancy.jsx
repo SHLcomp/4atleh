@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Fancy.scss';
 import data from '../../assets/data/fancy_data';
 
@@ -10,7 +11,7 @@ const Fancy = () => {
         {data.map((props)=>{
           return (
             <div className="circle-info">
-            <img src={props.bg} alt='' className="circle"></img>
+            <Link to={`/${props.category}`}><img src={props.bg} alt='' className="circle"></img></Link>
             <div className="circle-info-text">
                 <p>{props.name}</p>
             </div>

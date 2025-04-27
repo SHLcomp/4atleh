@@ -1,5 +1,5 @@
 {
-  "homepage": "http://SHLcomp.github.io/frontend",
+  "homepage": "https://SHLcomp.github.io/4atleh",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -41,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }

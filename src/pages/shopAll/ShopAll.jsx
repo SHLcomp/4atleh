@@ -2,13 +2,15 @@ import React from 'react'
 import './ShopAll.scss'
 import Product from '../../components/product/Product.jsx';
 import all_data from '../../assets/data/all_products.js';
+//context 
+import ShopContextProvider from '../../context/ShopContext.jsx'; //i need to wrap this here & in App.js :(
 
 const ShopAll = () => {
   return (
     <div className='shop'>
       <div className="left-shop">
 
-        <div className="filter">
+        <form className="filter">
           <h1>Filter by:</h1>
           {/* first */}
           <div className="filter-items">
@@ -17,23 +19,23 @@ const ShopAll = () => {
                 {/* first */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>Citrus</p>
+                <p>Beauty Products</p>
                 </div>
                 {/* other */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>indoors</p>
+                <p>Indoors</p>
                 </div>
                 {/* other */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>outdoors</p>
+                <p>Outdoors</p>
                 </div>
             </div>
           </div>
           {/* other */}
           <div className="filter-items">
-            <h3>Price:</h3>
+            <h3>Category:</h3>
             <div className="list">
                 {/* first */}
                 <div className="list-item">
@@ -43,13 +45,14 @@ const ShopAll = () => {
                 {/* other */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>indoors</p>
+                <p>Bamboo</p>
                 </div>
                 {/* other */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>outdoors</p>
+                <p>Roses</p>
                 </div>
+
             </div>
           </div>
           {/* other */}
@@ -59,29 +62,32 @@ const ShopAll = () => {
                 {/* first */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>Citrus</p>
+                <p>Low</p>
                 </div>
                 {/* other */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>indoors</p>
+                <p>Average</p>
                 </div>
                 {/* other */}
                 <div className="list-item">
                 <input type="radio" name="" id="" />
-                <p>outdoors</p>
+                <p>High</p>
                 </div>
             </div>
           </div>
           {/* --- */}
-        </div>
+        </form>
       </div>
-
 
       <div className="right-shop">
         <div className="products">
-          {all_data.map((item)=>{
-            return <Product name={item.name} image={item.image} des={item.des} price={item.price} category={item.category} id={item.id}/>
+          {all_data.map((item, i)=>{
+            return (
+              <ShopContextProvider>
+                <Product key={i} name={item.name} image={item.image} des={item.des} price={item.price} category={item.category} id={item.id}/>
+              </ShopContextProvider>
+            )
           })}
         </div>
       </div>

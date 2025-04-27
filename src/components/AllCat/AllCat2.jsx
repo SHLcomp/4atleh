@@ -8,7 +8,7 @@ const AllCat = (props) => {
     <div className='all-cat container'>
       {/* html structure */}
       {all_data.map((item,i) => {
-          if (props.category === item.category || props.sub_category === item.sub_category)  {
+          if (props.sub_category === item.sub_category)  {
             return <Product key={i} id={item.id} name={item.name} image={item.image} price={item.price} des={item.des} category={item.category} sub_category={item.sub_category}/>
           }
           else{

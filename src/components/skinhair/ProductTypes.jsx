@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ProductTypes.scss';
 import data from "../../assets/data/productTypes";
 
@@ -15,7 +16,7 @@ const ProductTypes = () => {
           return (
             <div className="type">
           <div className="img">
-            <img className='img-fluid' src={props.image} alt="" />
+          <Link to={`/${props.category}`}><img className='img-fluid' src={props.image} alt="" /></Link>
           </div>
           <div className="text">
             <h2>{props.name}</h2>

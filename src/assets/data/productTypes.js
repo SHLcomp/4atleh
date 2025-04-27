@@ -5,6 +5,7 @@ import p4 from '../images/products/hair oil.jpg'
 let data = [
   {
     id: 1,
+    category: "HairPer",
     name: "Hair Perfumes",
     des: "Fragmented plants, fuits.",
     image: p1, 
@@ -12,6 +13,7 @@ let data = [
   },
   {
     id: 2,
+    category: "Toner",
     name: "Toners",
     des: "Fragmented plants, fuits.",
     image: p2, 
@@ -19,6 +21,7 @@ let data = [
   },
   {
     id: 3,
+    category: "Tint",
     name: "Tints",
     des: "Fragmented plants, fuits.",
     image: p3, 
@@ -26,6 +29,7 @@ let data = [
   },
   {
     id: 4,
+    category: "HairOil",
     name: "Hair Oils",
     des: "Fragmented plants, fuits.",
     image: p4, 
