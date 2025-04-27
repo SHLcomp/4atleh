@@ -21,7 +21,7 @@ function App() {
 
     {/* navbar routes */}
     <Routes>
-      <Route path='/' element={<Home />}></Route> {/* added the home page */}
+      <Route path='/4atleh' element={<Home />}></Route> {/* added the home page */}
       <Route path='/cart' element={<Cart/>}></Route>
       <Route path='/favourites' element={<Fav />}></Route>
       <Route path='/signlogin' element={<Signlogin />}></Route>
