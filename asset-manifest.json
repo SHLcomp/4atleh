@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/4atleh/static/css/main.7da946f3.css",
-    "main.js": "/4atleh/static/js/main.5a7d772a.js",
+    "main.js": "/4atleh/static/js/main.4b00bf66.js",
     "static/js/453.8ab44547.chunk.js": "/4atleh/static/js/453.8ab44547.chunk.js",
     "static/media/hair perfume.jpg": "/4atleh/static/media/hair perfume.b2f75f066f650e62cf8e.jpg",
     "static/media/indoor.jpg": "/4atleh/static/media/indoor.9eb1846b7f262ed5ba80.jpg",
@@ -39,11 +39,11 @@
     "static/media/p18.webp": "/4atleh/static/media/p18.eca7bdddcd96b7836a8c.webp",
     "index.html": "/4atleh/index.html",
     "main.7da946f3.css.map": "/4atleh/static/css/main.7da946f3.css.map",
-    "main.5a7d772a.js.map": "/4atleh/static/js/main.5a7d772a.js.map",
+    "main.4b00bf66.js.map": "/4atleh/static/js/main.4b00bf66.js.map",
     "453.8ab44547.chunk.js.map": "/4atleh/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7da946f3.css",
-    "static/js/main.5a7d772a.js"
+    "static/js/main.4b00bf66.js"
   ]
 }
